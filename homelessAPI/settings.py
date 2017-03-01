@@ -29,7 +29,7 @@ SECRET_KEY = project_config.DJANGO_SECRET
 DEBUG = True
 
 # SECURITY WARNING: don't run with .elb.amazonaws.com in production!
-ALLOWED_HOSTS = ['127.0.0.1','localhost','.elb.amazonaws.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.elb.amazonaws.com', '192.168.99.100']
 
 # Get the IPV4 address we're working with on AWS
 # The Loadbalancer uses this ip address for healthchecks
