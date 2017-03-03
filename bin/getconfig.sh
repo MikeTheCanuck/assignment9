@@ -14,7 +14,7 @@ echo  DEPLOY_TARGET $DEPLOY_TARGET
 #    echo -e "#####################################################"
 #else
     echo -e "########################################"
-    echo -e  "USING {DEPLOY_TARGET^^} CONFIG"
+    echo -e  "USING $DEPLOY_TARGET CONFIG"
     echo -e  "USING THE $CONFIG_BUCKET CONFIG BUCKET"
     echo -e "########################################"
     export PATH=$PATH:~/.local/bin
