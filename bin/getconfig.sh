@@ -19,11 +19,12 @@ echo  DEPLOY_TARGET $DEPLOY_TARGET
     echo -e "########################################"
     export PATH=$PATH:~/.local/bin
 # 2017-03-02 troubleshooting, so I'm overriding the $DEPLOY_TARGET usage temporarily''
+# 2017-03-02 also overriding $CONFIG_BUCKET since Travis keeps claiming it's an empty, " " or null value at runtime
 #
 #    aws s3 cp \
 #          s3://$CONFIG_BUCKET/${DEPLOY_TARGET,,}/project_config.py \
 #          $PROJ_SETTINGS_DIR/project_config.py;
     aws s3 cp \
-          s3://$CONFIG_BUCKET/INTEGRATION/project_config.py \
+          s3://mikecanuckbucket/INTEGRATION/project_config.py \
           $PROJ_SETTINGS_DIR/project_config.py;
 #fi
