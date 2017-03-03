@@ -4,6 +4,8 @@ services:
   - docker
 before_install:
   - ./bin/config-build-container.sh
+# 2017-03-02: what if we put the getconfig.sh here (where Travis runs it, and can see its ENV VARs), instead of called within Docker?
+  - ./bin/getconfig.sh
 script:
   - ./bin/test-proj.sh
 after_success:
