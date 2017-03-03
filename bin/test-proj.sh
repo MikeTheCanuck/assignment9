@@ -5,6 +5,7 @@ source ./bin/env.sh
 docker build -t mikethecanuck/homeless-service .
 # docker build -t $DOCKER_REPO/$DOCKER_IMAGE .
 # docker build -t "$DOCKER_REPO"/"$DOCKER_IMAGE" .
+# docker build -t ${DOCKER_REPO}/${DOCKER_IMAGE}
 
 # 2017-03-02 If the above docker build doesn't work, this might be an alternative
 # docker-compose build  
