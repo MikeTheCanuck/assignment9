@@ -3,7 +3,7 @@ from . import views
 
 from rest_framework_swagger.views import get_swagger_view
 
-schema_view = get_swagger_view(title='Team Homelessness API - Mike 2017-03-03 9am')
+schema_view = get_swagger_view(title='Team Homelessness API')
 
 urlpatterns = [
     url(r'^$', schema_view),
