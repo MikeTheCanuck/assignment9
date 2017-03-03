@@ -24,6 +24,8 @@ echo  DEPLOY_TARGET $DEPLOY_TARGET
 #    aws s3 cp \
 #          s3://$CONFIG_BUCKET/${DEPLOY_TARGET,,}/project_config.py \
 #          $PROJ_SETTINGS_DIR/project_config.py;
+echo -e "s3://$CONFIG_BUCKET/$DEPLOY_TARGET/project_config.py $PROJ_SETTINGS_DIR/project_config.py"
+
     aws s3 cp \
           s3://$CONFIG_BUCKET/$DEPLOY_TARGET/project_config.py \
           $PROJ_SETTINGS_DIR/project_config.py;
