@@ -1,3 +1,3 @@
 # assignment9
 
-This fifth edit enables me to test against Travis
+This sixth edit still enables me to test against Travis (as insane as this repetition might feel inside my noggin)
